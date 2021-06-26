@@ -1,10 +1,10 @@
-@include('layouts.app')
-
-<!-- Header -->
-@include('layouts.header')
+@extends('layouts.app')
 
   <!-- Main content -->
   @section('content')
+
+  <!-- Header -->
+  @include('layouts.header')
     <!-- Page content -->
       <div class="row">
         <div class="col-xl-8">

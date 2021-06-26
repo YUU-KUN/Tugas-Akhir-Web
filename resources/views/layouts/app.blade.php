@@ -29,16 +29,12 @@
 </head>
 <body>
     <div id="app">
-        <!-- @if (!session('status')) -->
             @auth
                 @include('layouts.sidenav')
             @endauth
-        <!-- @endif -->
 
-        <!-- Sidenav -->
         <!-- Main content -->
         <div class="main-content" id="panel">
-            <!-- Topnav -->
             @auth
                 @include('layouts.topnav')
             @endauth
@@ -50,7 +46,6 @@
             </div>
 
             @auth
-            <!-- Footer -->
                 @include('layouts.footer')
             @endauth
         </div>

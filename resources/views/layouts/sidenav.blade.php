@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Register</a></li>--}}
                 @else
                     <li class="nav-item">
-                        <a class="nav-link active" href="dashboard.html">
+                        <a class="nav-link active" href="{{route('home')}}">
                             <i class="ni ni-tv-2 text-primary"></i>
                             <span class="nav-link-text">Dashboard</span>
                         </a>
@@ -50,12 +50,6 @@
                         <a class="nav-link" href="{{ route('products.index') }}">
                             <i class="ni ni-single-02 text-yellow"></i>
                             <span class="nav-link-text">Manage Product</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tables.html">
-                            <i class="ni ni-bullet-list-67 text-default"></i>
-                            <span class="nav-link-text">Tables</span>
                         </a>
                     </li>
                 @endguest
