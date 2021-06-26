@@ -30,14 +30,18 @@
 <body>
     <div id="app">
         <!-- @if (!session('status')) -->
-            @include('layouts.sidenav')
+            @auth
+                @include('layouts.sidenav')
+            @endauth
         <!-- @endif -->
 
         <!-- Sidenav -->
         <!-- Main content -->
         <div class="main-content" id="panel">
             <!-- Topnav -->
-            @include('layouts.topnav')
+            @auth
+                @include('layouts.topnav')
+            @endauth
 
             <div class="container-fluid mt-6">
             
@@ -45,12 +49,10 @@
 
             </div>
 
+            @auth
             <!-- Footer -->
-            @include('layouts.footer')
-            <!-- <main class="py-4">
-                <div class="container">
-                </div>
-            </main> -->
+                @include('layouts.footer')
+            @endauth
         </div>
 
         <!-- Argon Scripts -->
